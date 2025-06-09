@@ -176,13 +176,11 @@ def create_alfred_output(title, subtitle="", arg="", valid=True):
 def main():
     """主函数"""
     if len(sys.argv) < 2:
-        print("请输入要转换的文本")
         return
     
     text = sys.argv[1]
     
     if not text.strip():
-        print("请输入要转换的文本")
         return
     
     # 自动检测并转换
